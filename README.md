@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ohpensource/dotnet-test-gh-action@v0.1.0
+      - uses: ohpensource/dotnet-build-gh-action@v0.1.0
         name: Build dotnet application
         with:
           sln-folder: "src"

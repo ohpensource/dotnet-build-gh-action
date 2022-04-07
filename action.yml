@@ -1,0 +1,11 @@
+name: "build-dotnet-app"
+description: "builds the provided application (developed in dotnet)"
+inputs:
+  sln-folder:
+    description: "path where the .sln files are located"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/run-dotnet-build.sh ${{ inputs.sln-folder }}
+      shell: bash

@@ -1,6 +1,7 @@
 # dotnet-build-gh-action
 
-This action performs a _dotnet build_ on any solution (.sln file) inside the specified folder. The (required) input is _sln-folder_. Here is an example:
+This action performs a _dotnet build_ on any solution (.sln file) inside the specified folder. The (required) input is _sln-folder_.
+Here is an example:
 
 ```yaml
 name: CI
